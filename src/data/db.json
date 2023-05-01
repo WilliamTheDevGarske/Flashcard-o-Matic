@@ -3,18 +3,23 @@
     {
       "id": 1,
       "name": "Rendering in React",
-      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
+      "description": "React's component structure allows for quickly building a very complex web application that relies on DOM manipulation. "
     },
     {
-      "name": "React Router",
+      "name": "React Router 3",
       "description": "React Router is a collection of navigational components that compose declaratively with your application.",
       "id": 2
+    },
+    {
+      "name": "test",
+      "description": "test",
+      "id": 3
     }
   ],
   "cards": [
     {
       "id": 1,
-      "front": "Differentiate between Real DOM and Virtual DOM.",
+      "front": "Differentiate between Real DOM and Virtual DOM!",
       "back": "Virtual DOM updates are faster but do not directly update the HTML",
       "deckId": 1
     },
@@ -44,8 +49,8 @@
     },
     {
       "cards": [],
-      "front": "b",
-      "back": "b",
+      "front": "A!",
+      "back": "B?",
       "deckId": 1,
       "id": 7
     }

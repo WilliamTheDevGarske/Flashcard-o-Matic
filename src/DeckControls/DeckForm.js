@@ -50,4 +50,4 @@ function DeckForm({ handleSubmit, handleCancel, deck }) {
   );
 }
 
-export default DeckForm
+export default DeckForm;

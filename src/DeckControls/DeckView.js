@@ -4,7 +4,7 @@ import {
   useParams,
 } from "react-router-dom";
 import { readDeck } from "../utils/api/index";
-import DeckTop from "./DeckTop";
+import AlternateDeckTop from "./AlternateDeckTop";
 import CardList from "../CardControls/CardList";
 
 function DeckView() {
@@ -31,7 +31,7 @@ function DeckView() {
             <li className="breadcrumb-item">{`${deck.name}`}</li>
           </ol>
         </nav>
-        <DeckTop deck={deck} />
+        <AlternateDeckTop deck={deck} />
         <h2>Cards</h2>
         <CardList deck={deck} />
       </div>
