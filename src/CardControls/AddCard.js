@@ -31,7 +31,7 @@ function AddCard() {
     async function handleSubmit(card) {
       try {
         await createCard(deckId, card);
-        history.push(`/decks/${deck.id}`);
+        history.push(`/decks/${deck.id}/cards/new`);
       } catch (err) {
         if (err.name === "AbortError") {
           console.info("aborted");

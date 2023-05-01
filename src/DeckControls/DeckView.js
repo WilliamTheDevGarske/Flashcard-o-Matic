@@ -22,13 +22,13 @@ function DeckView() {
     return (
       <div>
         <nav aria-label="breadcrumb">
-          <ol className="breadcrumb">
+          <ol className="breadcrumb d-flex align-items-center">
             <li className="breadcrumb-item">
               <Link to="/" className="btn btn-link">
                 Home
               </Link>
             </li>
-            <li className="breadcrumb-item">{`${deck.name}`}</li>
+            <li className="breadcrumb-item active ">{`${deck.name}`}</li>
           </ol>
         </nav>
         <AlternateDeckTop deck={deck} />

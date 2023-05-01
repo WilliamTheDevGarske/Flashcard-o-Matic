@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 function CardForm({ handleSubmit, handleCancel, card }) {
   const [cardInfo, setCardInfo] = useState();
+  
   useEffect(() => {
     setCardInfo(card);
   }, [card]);
+  
   const updateForm = (event) => {
     const { name, value } = event.target;
     setCardInfo({ ...cardInfo, [name]: value });
   };
+  
   const submit = (event) => {
-    event.preventDefault();
     handleSubmit(cardInfo);
     setCardInfo({});
   };
@@ -43,10 +45,10 @@ function CardForm({ handleSubmit, handleCancel, card }) {
             required
           ></textarea>
           <button className='btn btn-secondary my-2' onClick={handleCancel}>
-            Cancel
+            Done
           </button>
           <button type='submit' className='btn btn-primary my-2'>
-            Submit
+            Save
           </button>
         </div>
       </form>
@@ -64,7 +66,7 @@ function CardForm({ handleSubmit, handleCancel, card }) {
           name='front'
           placeholder='Front of Card'
           value={cardInfo.front}
-          onChange={updateForm}  //never have problems here...
+          onChange={updateForm} 
           required
         ></textarea>
       </div>
@@ -80,10 +82,10 @@ function CardForm({ handleSubmit, handleCancel, card }) {
           required
         ></textarea>
         <button className='btn btn-secondary my-2' onClick={handleCancel}>
-          Cancel
+          Done
         </button>
         <button type='submit' className='btn btn-primary my-2'>
-          Submit
+          Save
         </button>
       </div>
     </form>

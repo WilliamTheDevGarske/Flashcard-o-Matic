@@ -1,27 +1,27 @@
 {
   "decks": [
     {
-      "name": "test",
-      "description": "test deck 1\n",
+      "name": "Test Deck",
+      "description": "Test",
       "id": 1
     }
   ],
   "cards": [
     {
-      "front": "test card",
-      "back": "test",
+      "front": "card 1",
+      "back": "1",
       "deckId": 1,
       "id": 1
     },
     {
-      "front": "test card 2",
-      "back": "test",
+      "front": "card 2\n",
+      "back": "2",
       "deckId": 1,
       "id": 2
     },
     {
-      "front": "test card 3",
-      "back": "test",
+      "front": "card 3",
+      "back": "3",
       "deckId": 1,
       "id": 3
     }
